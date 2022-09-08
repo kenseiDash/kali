@@ -12,17 +12,19 @@ pkg install x11-repo
 
 pkg update && pkg upgrade -y
 
-termux-setup-storage
-
-pkg install git -y
-
 pkg install wget -y
 
-wget -O install-nethunter-termux https://raw.githubusercontent.com/kenseiDash/NetHunter/main/install-nethunter-termux
+pkg install curl -y
 
-chmod +x install-nethunter-termux
+pkg install proot -y
 
-./install-nethunter-termux
+pkg install tar -y
+
+wget https://raw.githubusercontent.com/kenseiDash/kali/main/kali -O kali
+
+chmod +x kali
+
+bash kali.sh
 
 
 ## Startup
