@@ -24,7 +24,7 @@ wget https://raw.githubusercontent.com/kenseiDash/kali/main/kali -O kali
 
 chmod +x kali
 
-bash kali.sh
+bash kali
 
 
 ## Startup
